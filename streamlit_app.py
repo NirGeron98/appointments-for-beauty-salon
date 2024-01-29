@@ -78,7 +78,7 @@ def main():
 
     if login_button:
         # Perform admin login verification here (you can replace the condition with your own logic)
-        if username == "admin" and password == "maya":
+        if username == "admin" and password == "admin_password":
             st.sidebar.success("Login successful!")
             # Set the session state variable to True after successful login
             session_state.logged_in = True
