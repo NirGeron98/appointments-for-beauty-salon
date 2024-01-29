@@ -37,7 +37,7 @@ def admin_login():
 
     if login_button:
         # Perform admin login verification here (you can replace the condition with your own logic)
-        if username == "admin" and password == "maya":
+        if username == "admin" and password == "admin_password":
             st.success("Login successful!")
             # Set the session state variable to True after successful login
             session_state.logged_in = True
@@ -65,7 +65,7 @@ session_state = SessionState(logged_in=False)
 
 # Streamlit app code
 def main():
-    st.title("My Place - Maya Sela")
+    st.title("My Beauty Salon!")
 
     # Initialize the page variable with a default value
     page = "Make a Reservation"
